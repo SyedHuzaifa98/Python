@@ -1,0 +1,925 @@
+
+# Arithematic Operator  (+,-,*,/,%,//,**)
+
+    # print(5//2)    floor division
+    # print(2**3)   exponential
+
+# Assighment Operator   (=)
+
+# number1=2
+
+#number1+=4  # number1=number1+4
+#number1-=4  # number1=number1-4
+#number1*=4  # number1=number1*4
+#number1/=4  # number1=number1+4
+#number1%=4  # number1=number1+4
+#number1//=4  # number1=number1+4
+# number1**=2  # number1=number1+4
+
+# print(number1)
+
+
+
+#Logical  (ANd,Or,Not)
+# print(not(5<3 and 7>10))
+
+
+# Membership Operator  (in , not in)
+
+# fullname="hasan"
+# print('g' not in fullname)
+
+
+# value=input("Enter password\n")
+# if ('h' in value) and ('g' in value) and ('a' in value):
+#     print("Strong password")
+# else:
+#     print("Weak password")
+
+
+
+# value=input("Enter password\n")
+# if ('a' in value.lower()) and (('@' in value) or ('y' in value) or ('z' in value)):
+#     print("Strong password")
+# else:
+#     print("Weak password")
+
+
+
+#Bitwise Operator  (& ,|,^)
+
+# 10 = 1010
+# 12=  1100
+#   &  1000   => 8
+
+# print(10&12)
+
+
+# 10 = 1010
+# 12=  1100
+#   |  1110   => 14
+
+# print(10|12)
+
+
+
+# 10 = 1010
+# 12=  1100
+#   ^  0110   => 6  , ^ (XOR)
+
+# print(10^12)
+
+
+
+    # Strings
+
+# value="""
+# Hello
+# World
+# World
+# """    # Multi Line String
+# print(value)
+
+
+    #String Slicing
+#message="Welcome" # W->0 ,
+# print(message[:4])
+
+# print(message[-3:])  negative index
+
+# number1=int(input("Enter number\n"))
+# temp=0
+# if number1%2==0:
+#     temp=temp+1
+#
+# print(temp)
+
+# temp=0
+# 
+# question1=input("FIFA WC 2022 Winner?\n")
+# if(question1.lower()=="argentina"):
+#     temp=temp+1
+# 
+# question2=input("CWC WC 2022 Winner?\n")
+# if(question2.lower()=="argentina"):
+#     temp=temp+1
+# 
+# print("Score: ", temp)
+
+
+
+# name='ali name, hasan name'
+# name2='ahmed'
+# name3='4'
+# print(name.lower())
+# print(name.upper())
+# print(name.capitalize())
+# print(name.count('name'))
+# print(name.replace('ali','faaiz'))
+# print(name.isalpha())
+# print(name.title())
+# print(name3.isdigit())
+
+#student_age="Age"+21   wrong method
+# student_age="Age {1} , height {0}"
+# print(student_age.format(21,5.7))
+
+
+
+
+
+                # for(int a=10;a>0;a--){
+                #     print(a)
+                # }
+
+
+# for a in range(1,10):
+#     if(a%2==0):
+#         print('Even',a)
+#     else:
+#         print('Odd',a)
+
+
+
+# text="Hello we are learning python"
+# count_vowel=0
+# for ch in text:
+#     if (ch=='a' or ch=='e' or ch=='i' or ch=='o' or ch=='u'):
+#         count_vowel=count_vowel+1
+# print('Total times Vowels: ', count_vowel)
+
+
+
+# password:input("Enter password")
+
+
+# count_digit=0
+# count_alpha=0
+# password=input("Enter password\n")
+#
+# for ch in password:
+#     if(ch.isalpha()):
+#         count_alpha+=1
+#     elif(ch.isdigit()):
+#         count_digit+=1
+#
+# if(count_digit>=3 and count_alpha>=4):
+#     print("Strong password")
+# else:
+#     print("Weak password")
+
+
+
+# number=0
+# while number<10:
+#     print(number)
+#     number+=1
+
+
+# count_even=0
+# number=0
+# while number<10:
+#     if(number%2==0):
+#         count_even=count_even+number
+#     number+=1
+#
+# print("Sum of even",count_even)
+
+
+
+
+                # Collection Data types
+                # List , Tuple , Set , Dictionary
+
+# List
+    # create using square brackets
+    # each item have index starts from zero
+
+#cities = ['Hyd', 'Kar', 'Lhr','Isl']
+
+# print(cities)     #print all items
+#print(cities[0:3])   # print items in range
+# print(len(cities))   # count list items
+
+# cities.pop(0);   # remove specific item from list
+# print(cities)
+
+# cities[1]='Faislabad'      # replace existing value of list
+# print(cities)
+
+# cities.insert(3,"sukkur")  #insert new item
+# print(cities)
+
+
+
+# number=[12,2,14,13,25,30,15,15]
+# for value in number:
+#     if value%2==0:
+#         print("Even: ",value)
+#     else:
+#         print("Odd: ", value)
+
+
+
+# items=[45,12,5,6,8]
+# print(items[2:-2])
+
+
+
+# number=[12,2,11,13,25,30]
+# index=0
+# for value in number:
+#     #print(index)
+#     if value%2==0:
+#         print("Even: ",value)
+#         number[index]=value+1
+#     index+=1
+#
+# print(number)
+
+
+# alphabets=['a','r','t','e','o','q']
+
+
+
+# unordered_numbers=[2,1,56,43,12,1,6]
+
+#unordered_numbers.sort()  # for sorting in ascending
+#unordered_numbers.sort(reverse=True)   # for sorting in descending
+# print(unordered_numbers)
+
+
+# fruites=['apple','mango','orange']
+# newlist=fruites.copy()
+# fruites.insert(3,'pineapple')
+# print(newlist)
+
+
+
+
+
+
+    #Dictionary
+        #Collection data type
+        #data in key value pair
+
+student_info={
+    'name':'ali',
+    'from':'hyd',
+    'age':20,
+}
+
+# print("hyd" in student_info.values())
+
+# nakeme : ali
+# from : hyd
+# age : 20
+
+# print(student_info.keys())
+# print(student_info.values())
+# print(student_info.items())
+#
+# for keys1,values1 in student_info.items():
+#     print(keys1,values1)
+
+
+
+# student_info["name"]="Hasan"
+# print(student_info)
+
+
+
+
+
+
+
+numbersDictionary={
+    "number1":34,
+    "number2":13,
+    "number3":20,
+    "number4":10
+}
+
+# countEven=0
+# countOdd=0
+#
+# for values1 in numbersDictionary.values():
+#     if(values1%2==0):
+#         countEven+=1
+#     else:
+#         countOdd+=1
+#
+# print("Total Even: ",countEven)
+# print("Total Odd: ",countOdd)
+
+
+
+
+
+
+
+# print(numbersDictionary)
+# #numbersDictionary.pop("number2")
+# #numbersDictionary.popitem()
+# print(numbersDictionary)
+
+
+
+# numbersDictionary.clear()
+# numbersDictionary["name"]="ali"
+# print(numbersDictionary)
+
+
+
+
+
+        #Nested List
+
+
+all_student_data={
+    "child1":{
+        "name":"ali",
+        "city":"hyd"
+    },
+    "child2":{
+        "name": "hasan",
+        "city": "kar"
+    },
+    "child3":{
+        "name": "ahmed",
+        "city": "lhr"
+    }
+}
+#print(all_student_data.values())
+
+
+
+
+
+#Tuples
+# cities=("Hyd","Ali","Lhr")
+# y=list(cities)
+# y[1]="Dr Ali"
+# cities=tuple(y)
+# print(cities)
+
+# cities=("Hyd","Kar","Lhr")
+# y=list(cities)
+# y.insert(3,"Isl")
+# cities=tuple(y)
+# print(cities)
+
+
+
+# cities=("Hyd","Kar","Lhr")
+# y=list(cities)
+# y.pop(1)
+# cities=tuple(y)
+# print(cities)
+
+
+
+
+        #Unpacked Tuple
+# cities=("Hyd","Kar","Lhr")
+# (A,*B)=cities
+# print()
+
+
+
+# cities=("Hyd","Kar","Lhr")
+
+# for i in range(len(cities)):
+#     print(cities[i]," Index is ",i)
+
+
+# for i in cities:
+#      print(i)
+
+
+
+# t1=(12,13,14,15)
+# t2=("A","B")
+# t3=t1+t2
+# print(t3)
+
+
+
+
+# s1={2,31,5,6}
+# s1.add(100)
+# print(s1)
+# list1=list(s1)
+# list1[2]=200
+# print(list1)
+# s1=set(list1)
+# print(s1)
+
+
+
+# names=("Ali","Hasan","Ahmed")
+#
+# for i in range(len(names)):
+#     temp=list(names)
+#     temp[i]="Dr "+temp[i]
+#     names=tuple(temp)
+#
+# print(names)
+
+
+
+
+# for i in range(10,0,-1):
+#     print(i)
+
+
+# 1
+# 12
+# 123
+# 1234
+
+
+# for i in range(1,5):
+#     for j in range(1,i+1):
+#         print(j, end = '')
+#     print()
+
+
+# print("Hello there!", end = '')
+
+
+# print_traingle(5)
+
+
+
+        # def  is keyword
+        # sayHello is name
+        # () are parenthesis can contain parameters
+
+# def sayHello():
+#     print("Hello, ")
+#
+# sayHello()   #calling function
+
+
+# def add(var1,var2):  # parameters are var1 and var2
+#     print(var1+var2)
+#
+# add(3,4)   # 3,4 are arguments
+
+
+
+# def list_function(cities):
+#     for value in cities:
+#         print(value)
+#
+#
+#
+# cities=['Hyd','Kar']
+#
+# list_function(cities)
+
+
+
+# def multiples_of_2(number1):
+#     return 2*number1
+#
+# print(multiples_of_2(5))
+
+
+
+
+# def check(number):
+#     if number%2==0:
+#         print("Even")
+#     else:
+#         print("Odd")
+#     print("Number")
+#
+# check(5)
+
+
+# def student_info(name,email):
+#     print("Name: ",name)
+#
+# student_info("Ali","ali@gmail.com")
+
+
+
+
+# def sayWellcome(name,country):
+#     print("Wellcome: ",name)
+#     print("From: ",country)
+#
+# sayWellcome(country="pak",name="Ali")
+
+
+
+
+# def default_arg(country="pak"):
+#     print("I am from ",country)
+#
+# default_arg()
+
+
+
+
+
+
+
+# def multi_arg(*args):
+#     print(args[3])
+# multi_arg("Hyd","Kar","Isl","Lhr")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def checkpassword(password):
+#     count_digit = 0
+#     count_alpha = 0
+#     for ch in password:
+#         if (ch.isalpha()):
+#             count_alpha += 1
+#         elif (ch.isdigit()):
+#             count_digit += 1
+#
+#     if (count_digit >= 3 and count_alpha >= 4):
+#         print("Strong password")
+#     else:
+#         print("Weak password")
+#
+#
+# pass1 = input("Enter password\n")
+# checkpassword(pass1)
+
+
+
+
+# x=10   # global variable
+#
+# def new_function():
+#     global x
+#     x=12
+#     y=13  # local variable
+#     print(x)
+#
+# new_function()
+# print(x)
+
+
+
+
+
+
+
+        # LIST Comprehension         [expression for item in iterable if condition==True]
+
+# alphabets=['G','K','R','S','T']
+# newlist=[]
+# for x in alphabets:
+#     if x!='G':
+#         newlist.append(x)
+#
+# print(newlist)
+#
+
+
+
+# alphabets=['G','K','R','S','T']
+# newlist=[x for x in alphabets if x!='G']
+# print(newlist)
+
+
+# alphabets=['G','K','R','S','T']
+# newlist=[x for x in alphabets if x=='G']
+# print(newlist)
+
+
+# mixedletters=['w','e','i','y','o','j','d']
+# vowels=[x for x in mixedletters if(x=='e' or x=='i' or x=='o')]
+# print(vowels)
+
+
+
+
+# numbers=[12,15,2,5,10,75,35,23,43,65]
+
+
+
+# courses=['Web Design','SEO','Graphic Design']
+# enrollments=[23,10,30]
+#
+# dictionary1={i:j for (i,j) in zip(courses,enrollments) if(j>10)}
+# print(dictionary1)
+
+
+
+
+# newDictionary={x:x+2 for x in [3,2,1,4]}
+# print(newDictionary)
+
+
+# newDictionary={x.upper():x*3 for x in 'coding'}
+# print(newDictionary)
+
+
+        #PYTHON Lambda function  are anonymous functions
+
+# x=lambda a:a+13
+# print(x(5))
+
+
+
+# add=lambda a,b:a+b
+# print(add(2,3))
+
+
+
+
+
+# 3 Write a list comprehension that builds a list containing only the names with at least 8 characters.
+#
+# Input
+
+
+
+# avengers = ["Iron Man", "Captain America", "Thor", "The Incredible Hulk", "Bla avengers ck Widow", "Hawkeye"]
+# newlist=[x for x in avengers if(len(x)>=8)]
+# print(newlist)
+
+
+# print(len(avengers[1]))
+
+
+
+
+class A:
+    __status1=1 # __ used for private members
+    _status=10   # _ used for protected members
+
+    fname=''
+    lname=''
+    # def __init__(self,first,last):
+    #     print("This is constructor statement")
+    #     self.fname=first
+    #     self.lname = last
+
+    def show(a):
+        print("First name: ",a.fname)
+        print("Last name: ",a.lname)
+
+    def showstatus(self):
+        print(self.__status1)
+
+    def sayHello(self1):
+        print("Hello, ")
+    def add(self1,a,b):
+        print("Addition: ",a+b)
+
+
+
+class B(A):
+   pass
+
+
+
+# y=B()
+# print(y._status)
+
+
+
+
+
+# x=A("Ali","Hasan")
+# x.sayHello()
+# x.add(12,3)
+# x.showstatus()
+# print(x.status)
+
+
+
+
+# x=A("Ali","Khan")
+# x.show()
+
+
+# y=B()
+# y.add(2,3)
+
+
+
+
+
+
+#break, continue
+
+
+
+# for i in range(1,7):
+#     if(i==5):
+#         continue
+#     print(i)
+
+
+
+
+# for i in range(1,10):
+#     for j in range()
+
+
+
+
+# 5 => 4,3,2,1
+# 9 =>8,7,6,5,4,3->
+
+
+
+
+
+
+
+
+# temp=False
+# num=5
+#
+# for i in range(2,num):
+#     if(num%i)==0:
+#         temp=True
+#         break
+#
+#
+# if temp==True:
+#     print("Not prime")
+# else:
+#     print("Prime")
+
+
+
+# numlist=[22,25,5,4,12,13,11]
+# countprime=0
+# for i in numlist:
+#     temp=False
+#     for j in range(2,i):
+#         if(i%j==0):
+#             temp=True
+#     if(temp==False):
+#         countprime = countprime + i
+#
+# print("Sum of prime: ",countprime)
+
+
+
+
+
+# check=input("Enter number 1-3")
+
+
+
+
+
+
+
+
+
+
+# class person:
+#     name=''
+#     age=0
+#     height=1
+#
+#     def walking(self):
+#         print("Hello, I m Walking")
+#     def add(self,x,y):
+#         print("Addition: ",x+y)
+#     def info(self1):
+#         print("Name: ",self1.name)
+#         print("Age: ",self1.age)
+#         print("Height: ",self1.height)
+#
+#
+# obj1=person()
+# obj2=person()
+#
+# obj1.name='Ali'
+# obj1.age=21
+# obj1.height=5.4
+#
+# obj1.info()
+#
+#
+# obj2.name='HASAN'
+# obj2.age=20
+# obj2.height=5.8
+#
+# print(obj2.name)
+# obj1.walking()
+# obj1.add(3,4)
+
+
+
+
+
+    # Polymorphism
+
+# str1="Hello World"
+# list1=[3,2,6,5,4]
+# print(len(str1))
+# print(len(list1))
+
+
+# class A:
+#     def printmessage(self):
+#         print("hello World")
+# class B:
+#     def printmessage(self):
+#         print("Code in python")
+#
+# x=A()
+# y=B()
+# x.printmessage()
+# y.printmessage()
+
+
+
+
+# class A:
+#     var1=24
+#     def add(self,x,y):
+#         print("Addition: ",x+y)
+#
+# class B(A):
+#     var2=56
+#
+#
+# obj=B()
+# obj.add(4,5,6)
+
+
+
+
+
+
+class student:
+    #Public ,Private , Protected
+    __name='ali' #private
+    age=23 #public
+    _height=5.4  #protected
+    def showname(self):
+        print("name: ",self.__name)
+    def setname(self,username):
+        self.__name=username
+
+class subject:
+    subjectname='maths'
+
+# multiple inheritant more than one class inherit at a time like student,subject
+class student2(student,subject):
+    def message(self):
+        print("Name: ",self._height)
+        print("Subject: ",self.subjectname)
+
+
+obj=student2()
+obj.message()
+
+
+# obj=student()
+# obj.setname('Hasan')
+# obj.showname()
+
+
+...
+Syed Huzaifa 
+(imsyed1998@gmail.com)
+General Info
+TypeText
+Size13 KB
+Location
+Modified2:44 PM Feb 4, 2023
+Created2:52 PM Feb 4, 2023
+Opened by me2:52 PM Feb 4, 2023
+Sharing
+Python_Batch(Jan-2023) teachers
+Can Edit
+Python_Batch(Jan-2023)
+Can View
+
+Syed Huzaifa
+Owner
+Description
+No description
+Download Permission
+Viewers can download
+Displaying main.py.
